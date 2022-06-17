@@ -22,3 +22,12 @@ body{
 .box_bgFizzbuzz{
     background-color: rgb(198, 38, 38);
 }
+.c_fizz{
+    color: rgb(25, 146, 61);
+}
+.c_buzz{
+    color: rgb(255, 233, 32);
+}
+.c_fizzbuzz{
+    color: rgb(198, 38, 38);
+}
