@@ -29,4 +29,16 @@ for (let i = 0; i < validMail.length; i++){
     }
     //! non inserisco un else perche ad ogni ciclo che non trova mi risovrascrive il valore booleano
     boxContainer.append(emailMessage)
+
+
+    //?creo un altro if per la risposta
+    //? la creo separatamente in modo da evitare il ripetersi del ciclo im console
+    //*se nella prima condizione c'è un valore che sia vero stampa in console (x)
+    if(emailFound === true){
+        console.log(`the email is registered`)
+    }
+     //*se nella prima condizione c'è un valore che sia falsa stampa in console (x)
+    else{
+        console.log(`the emsil s not registered`)
+    }
 }
