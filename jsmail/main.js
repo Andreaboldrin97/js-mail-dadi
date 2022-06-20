@@ -11,12 +11,13 @@ let userMail = prompt(`inserisci la tua e-mail`);
 console.log(userMail);
 
 //creo una variabile di comparazione 
+//la creao falsa (perche essendo piu elementi molto probabilmente solo uno sara vero )
 let emailFound = false ;
 
 //*creo una var del parent a cui voglio agg. elementi
 let boxContainer = document.querySelector(`.box_container`);
 
-//! creo un ciclo degli array
+//! creo un ciclo per tutta la lunghezza del mio array
 for (let i = 0; i < validMail.length; i++){
     //*creo una variaile con l'elemento che voglio creare
     let emailMessage=document.createElement('h1');
@@ -26,5 +27,6 @@ for (let i = 0; i < validMail.length; i++){
         emailFound = true;
         emailMessage.innerHTML= (`bentornato ${userName}`)
     }
+    //! non inserisco un else perche ad ogni ciclo che non trova mi risovrascrive il valore booleano
     boxContainer.append(emailMessage)
 }
